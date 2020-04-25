@@ -1,0 +1,17 @@
+{
+    "RawFoodDrieTimeSecs": 7200,
+    "RawFoodDecayTimeSecs": 14400,
+    "CookedFoodDecayTimeSecs": 28800,
+    "SaltConservationMultiplier": 85,
+    "FridgeConservationMultiplier": 120,
+    "SaltConsumption": 0.0033,
+    "FridgeClasses": [
+        "PF_Fridge",
+        "Msp_SmallFridge",
+        "Msp_BlueFridge",
+        "Msp_RetroBlueFridge",
+        "Msp_RustyFridge",
+        "Msp_Blue50sFridge",
+        "Msp_50sFridge"
+    ]
+}

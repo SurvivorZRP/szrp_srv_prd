@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!--  ___________ YOU CAN FIND DETAILED INSTRUCTIONS in PvZmoD_CustomisableZombies_HELP.txt file ___________  -->
+<!-- See the new Features at the end of the file -->
+
+<types>
+	<type name="File_Name">
+        <Customisable_Zombies_List 		File_Name = "PvZmoD_CustomisableZombies_Characteristics.xml"/>	<!-- don't forget .xml extension  -->
+    </type>
+	
+	<type name="Features_Activation">
+        <Disable_All_Features	 		Day = "0"	Night = "0"/>	<!-- [0 or 1]  --> 
+        <Zombies_Health_Activated 		Day = "1"	Night = "1"/>	<!-- [0 or 1]  -->
+        <Zombies_Resistance_Activated 	Day = "1"	Night = "1"/>	<!-- [0 or 1]  -->
+        <Zombies_Speed_Activated		Day = "1"	Night = "1"/>	<!-- [0 or 1]  -->
+        <Zombies_CrawlControl_Activated	Day = "1"	Night = "1"/>	<!-- [0 or 1]  -->
+        <Zombies_Strenght_Activated	 	Day = "1"	Night = "1"/>	<!-- [0 or 1]  -->
+		<Zombies_Vision_Activated		Day = "1" 	Night = "1" WithBloodyHands="1" WithSpecialMask="1" MiniMumRatioDistance="1"/> <!-- [0 or 1]  -->
+        <Player_Fist_Fighting_Activated Day = "1"	Night = "1"/>	<!-- [0 or 1]  -->
+    </type>
+	
+	<type name="Zombies_Caracteristics">
+        <Zombies_Health_Ratio		Day	= "1.0"	Night = "1.0"/>
+        <Zombies_Strength_Ratio		Day	= "1.0"	Night = "1.0"/> <!-- Except the bleeding chance -->
+        <Zombies_Speed_Ratio		Day	= "1.0"	Night = "1.0"/>
+   </type>
+	
+    <type name="Players_Caracteristics">
+        <Maximum_Number_Of_Bleeding_Sources_From_Zombies_Combat			Value = "4"	/>
+        <Shoes_Degradation_When_Hit_By_Crawling_Zombie					Value = "5" />
+        <Fist_Fighting	Gloves_Degradation_Speed_When_Fist_Fighting				= "0.5"		/>
+        <Fist_Fighting 	Bleeding_Chance_If_Fist_Fighting_Without_Gloves 		= "0.025"	/>
+        <Fist_Fighting	Player_Dammage_If_Fist_Fighting_Without_Gloves			= "0.5"		/>
+        <Fist_Fighting	Player_Health_Limite_To_Take_Dammage_From_Fist_Fighting	= "80.0"	/>
+        <Special_Mask_To_Hide_From_Zombies	List = "Mask1,Mask2,Mask3"	/>	<!-- no spaces, use comma between each mask -->
+    </type>
+	
+	<type name="Night_Management">
+        <OverRide_Vanilla_Night_Time	Activated 	= "0"		/> <!-- 0 : Vanilla night time / 1 : Replace vanilla time with values below / -1 : No night config (Day zombies config always used) -->
+        <Night_Beginning				Time 		= "20:30"	/> <!-- 24h time (set 20:30 no 8:30pm for example) -->
+        <Night_End						Time 		= "04:30"	/>
+    </type>
+	
+	<type name="Debug_do_not_modify">
+        <Debug_Mod 	Activated = "0"/>	<!-- [0 or 1] keep to 0 to save server resources : refresh xml modifications each 1 second in debug mod and each 30 seconds in normal mod (when change from 0 to 1 the curent 30s timer have to finished before begin to refresh at 1s rate) -->
+	</type>
+
+	<type name="NewFeatures">		<!-- New feautures, you should move them in the right section (not mandatory but cleaner structure is easier for you to tweak) -->  
+	</type>
+</types>
+<!--  ___________ YOU CAN FIND DETAILED INSTRUCTIONS in PvZmoD_CustomisableZombies_HELP.txt file ___________  -->
+

@@ -1,0 +1,254 @@
+
+					  NOTE THAT ALL THESE VALUES (Globals and Characteristics) 
+						CAN BE REFRESH INGAME WITHOUT RESTARTING THE SERVER 
+									BY PRESSING NUMPAD4
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////// Global.xml AND Characteristics.xml ////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+	Important : don't modify the variable names and don't use these names in comments if you write some. 	
+	
+	The modifications you will do should not be crushed when new variables will come with new updates.
+	So don't worry you shouldn't lose your tweaks with updates (but keep reading the patch notes to be sure!).		
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////// GLOBALS XML FILE //////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+	Section "NewFeatures" (at the end of the file)
+		In this section you will find the new features variables.
+		
+		You can move these variables in an existing sections.
+		It is not mandatory but more clear for you to tweak in the future.		
+
+////////////////////////
+		
+	Customisable_Zombies_List
+		You can change the name of the file containing zombie characteristics
+		This is useful to quickly change the zombie configuration or to make tests
+		Don't forget .xml extension
+
+	Features_Activation	
+		Disable_All_Features
+			This will disable all feature of the mod
+			Useful if you encounter problems (but it shouldn't happen ;-))
+		Zombies_Health_Activated / Zombies_Resistance_Activated / Zombies_Speed_Activated / Zombies_Vision_Activated...
+			This disable the feature one by one
+			It is the more efficient way to disable a feature (more that modify characteristics) 
+			All my code will be skipped so no bug or resource consume from a disabled feature that way
+		
+////////////////////////	
+
+	Zombies_Caracteristics :
+	
+		Zombies_Health_Ratio		
+			Ratio (%) applied to all zombies health
+			
+		Zombies_Strength_Ratio
+			Ratio (%) applied to all zombies 
+				Ratio_Damage_Health
+				Ratio_Damage_Shock
+				Damage_Blood
+				Damage_Stamina
+				(!NOT to the Bleeding_Chance!)
+				
+		Zombies_Speed_Ratio	
+			Ratio (%) applied to all zombies minimum and maximum speed		
+
+////////////////////////	
+
+	Players_Caracteristics
+		Maximum_Number_Of_Bleeding_Sources_From_Zombies_Combat
+			It is the maximum number of bleeding source from zombie
+			It does not include bleeding from ladders or ruined shoes
+			
+		Shoes_Degradation_When_Hit_By_Crawling_Zombie
+			The crawling zombies inflict damages to player shoes 
+			Increase it if you want make things harder
+	
+		The "Gloves" values intend to avoid players to fight zombies with fists too easily
+		Gloves_Degradation_Speed_When_Fist_Fighting
+			Increase it if you want make things harder
+		Bleeding_Chance_If_Fist_Fighting_Without_Gloves
+			Increase it if you want make things harder
+		Player_Dammage_If_Fist_Fighting_Without_Gloves
+			Increase it if you want make things harder
+		Player_Health_Limite_To_Take_Dammage_From_Fist_Fighting
+			This limit is because nobody want to die because a wound at the hand
+			Default value is 80 (maximum health is 100)
+			Decrease it if you want make things harder
+
+		Special_Mask_To_Hide_From_Zombies
+			It is a list of mask that allow player to modify zombie vision.
+			When a player wear one of this mask, the "WithSpecialMask" ratio from Characteristics file is apply to zombies vision distance.
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////// CHARACTERISTICS XML FILE ///////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+	Important :
+		The fist class corresponding to the spawned zombie is used
+		For example if you place "ZmbM_HermitSkinny_Base" before "ZmbM_HermitSkinny_Black"
+		the "_Base" values will be used because "ZmbM_HermitSkinny_Base" is the parent of "ZmbM_HermitSkinny_Black" 
+		
+		"ZombieBase" is the "grandparent" class of all zombies, that's why it is at the end of the file		
+		If you want to add NEW ZOMBIE TYPES (from other mods), add the new categorie at BEGINING OF THE LIST	
+		If you want all zombies to have exactly same characteristics, you can modify "ZombieBase" as you want and delete all other categories.
+		
+////////////////////////
+	
+	type name :
+		The name of the class of the zombie
+		Note that the mod does not work for animals
+	
+	Health_Points : 
+		The number of heath point of the zombie
+
+	Resistance_to_Bullets /  Melees / Vehicles / Explosions / HeadShots	:	
+		Inferior to 1 	: Weak from damages
+		1 				: Normal resistance to damages 
+		Superior to 1 	: More resistant to damages
+
+	Move_Speed_Min / Max : 
+		1.0 - 1.6 : Walk 			 
+		2.2 - 2.7 : run 				
+		2.8 - 3.0 : sprint 
+		(1.7-2.1 : sometime walk, sometime run, not recommended to use)
+	
+	Chance_To_Spawn_Crawling : 
+		-1 	: Never Crawling even when been shooted in legs
+		0  	: Never spawned Crawling 			 
+		0.5	: 50% chance to spawn Crawling 	
+		1 	: Always spawn Crawling
+	
+	/////////
+	
+	Health_Points / Restistances / Chance_To_Spawn_Crawling / MoveSpeeds : 
+		First Value  : DAY 	 time value
+		Second Value : NIGHT time value
+
+////////////////////////
+
+	Ratio_Damage_Health / Ratio_Damage_Shock :
+		RATIO applied to the vanilla "Heath"/"Shock" damages deals by zombies
+		Keep in mind it is a RATIO (%) not a quantity
+	
+	Bleeding_Chance :
+		Chance (%) for the player to bleed when hit by the zombie
+		Note that you can let the vanilla system dealing the bleeding chance by setting the value to -1
+		The vanilla bleeding chance are 10% for all attacks types
+	
+	Damage_Blood :
+		QUANTITY of blood the player loose when hit by the zombie
+		The player have a maximum of 5000 blood 
+		Keep in mind that the player can die with when than 2500 depending on his other statutes 
+		the vanilla system is not very clear about that so be careful
+		Note that the vanilla system does not apply blood damage on zombie hits
+		Keep in mind it is a QUANTITY not a ratio
+
+	Damage_Stamina
+		QUANTITY of stamina that the player loose when hit by the zombie
+		This is not a permanent stamina lose, the player recover it as usual
+		The maximum stamina is 100 (when carrying nothing)
+		Note that the vanilla system does not apply stamina and blood damage on zombie hits
+		Keep in mind it is a QUANTITY not a ratio
+		
+	/////////
+	
+	LightAttack_NotBlocked
+		Value (ratio or quantity) applied when zombie perform a LIGHT attack and the player does NOT BLOCK it
+	
+	LightAttack_Blocked
+		Value (ratio or quantity) applied when zombie perform a LIGHT attack and the player BLOCK it
+	
+	HeavyAttack_NotBlocked
+		Value (ratio or quantity) applied when zombie perform a HEAVY attack and the player does NOT BLOCK it
+	
+	HeavyAttack_Blocked
+		Value (ratio or quantity) applied when zombie perform a HEAVY attack and the player BLOCK it
+	
+	NightRatio
+		Ratio applied to the previous chosen ratio or quantity
+	
+	
+	Exemple : 		
+		If zombie perform a heavy attack on a player that block it, during the night.
+		Damage applied = 
+			Vanilla Heavy Attack damage (with vanilla clothing protection factor applied)
+			* HeavyAttack_Blocked ratio
+			* NightRatio
+			* Zombies_Strength_Ratio Night (from PvZmoD_CustomisableZombies_Globals.xml file)
+			
+////////////////////////
+
+	Vision_Distance_Ratios :
+		It is ratios applied to vanilla vision distance of zombies
+		The ratio are cumulative
+		
+	Example of vision distance calculation :
+		Final vision distance = 
+			Default Vanilla vision distance 
+			* Vanilla night ratio	(yes there is already a vanilla night ratio so don't lower the one of PvZ too much or zombie will become blind)
+			* Vanilla vision modifiers (include player stance, speed, and clothes)
+			* PvZ Day or Night ratio
+			* PvZ WithBloodyHands ratio (if player have bloody hands)
+			* PvZ WithSpecialMask ratio (if player wear a special mask that is in the Global.xml file)
+			
+	Note1 : The result of le multiplication of the 3 PvZ ratios can't be inferior to the "MiniMumRatioDistance" value (to avoid being able to go too close to the zombies)
+	Note2 : The Zombies hearing is not affected so zombies can be attracted by player sounds but will not aggro if they are not close enough.
+	Note3 : If you choose to increase the ratio beyond 1 to increase vision distance, the result will never exceed the original "Default Vanilla vision distance"
+
+////////////////////////
+	
+	Summary of possible values:
+	
+		type name					Class name
+		
+		Health_Points				Integer (Quantity) 	[1 to 100000]		(or "-99")	
+		Resistance_to_Bullets		Decimal (Ratio) 	[0.0 to infinite]	(or "-99")
+		Resistance_to_Melees		Decimal (Ratio) 	[0.0 to infinite]	(or "-99")
+		Resistance_to_Vehicles		Decimal (Ratio) 	[0.0 to infinite]	(or "-99")
+		Resistance_to_Explosions	Decimal (Ratio) 	[0.0 to infinite]	(or "-99")
+		Resistance_to_HeadShots		Decimal (Ratio) 	[0.0 to infinite]	(or "-99")	
+		
+		Move_Speed_Min				Decimal (Quantity) 	[0.0 to 3.0]		(or "-99")
+		Move_Speed_Max				Decimal (Quantity) 	[1.0 to 3.0]		(or "-99")	
+		Chance_To_Spawn_Crawling	Decimal (Ratio) 	[0.0 to 1.0 or -1.0](or "-99")
+		
+		Ratio_Damage_Health			Decimals (Ratio) 	[0.0 to infinite]	(or "-99")	
+		Ratio_Damage_Shock			Decimals (Ratio) 	[0.0 to infinite]	(or "-99")
+		Bleeding_Chance				Decimals (Ratio) 	[0.0 to 1.0 or -1.0](or "-99")		
+		Damage_Blood				Integers (Quantity) [0 to 5000]			(or "-99") 	except "NightRatio" => Decimal (Ratio) [0.0 to infinite]	(or "-99")
+		Damage_Stamina				Integers (Quantity) [0 to 100]			(or "-99") 	except "NightRatio" => Decimal (Ratio) [0.0 to infinite]	(or "-99")	
+		
+		Vision_Distance_Ratio		Decimals (Ratio) 	[0.0 to infinite]	(or "-99")
+	
+	/////////
+	
+	What means "-99" :
+		You can set a characteristic to "-99" if you want to use the "ZombieBase" corresponding value.
+		It is useful for change value of many zombie at the same time.
+		I hesitated to set all non modified values to -99 but I thought it will not be clear for users.		
+	
+////////////////////////
+
+	You can find a couple of examples at the end of the xml file (before "ZombieBase" class of course)
+	
+		Example_VANILLA_Config_for_VANILLA_Zombies
+			Use it if you want to keep vanilla zombies characteristics
+			
+		Example_OTHER_MOD_Zombies_whith_their_VANILLA_Config
+			Use it if you want add new zombies from other mods and keep the health points form the mod
+			The important value is the Health_Points = 100000; (don't wory it will not really set health to 100000)
+			
+		Example_USE_DEFAULT_Config_values
+			All the values are set to "-99" so the "ZombieBase" values are used
+			Useful to tweak lot of zombies at once
+		
+		Example_WALKINGDEAD_HeadShot
+			And finally a Walking Dead zombie because I know a lot of you like it.
+			Note that the night values are "normal zombies" ones to compare differences between walking dead and vanilla zombies
+			Tips : if you want all zombies be the exactly same walking dead, you can copy the walking dead characteristics in "ZombieBase" and delete all other categories.
+
+/////////////////////////////////////////////////////////////////////////////////////////////

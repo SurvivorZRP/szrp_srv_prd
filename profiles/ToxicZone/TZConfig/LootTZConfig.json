@@ -1,0 +1,346 @@
+{
+    "TimerLoot": 2700000,
+    "IsActive": 1,
+    "Loots": [
+        {
+            "LootName": "MSFC_AK_ALFA",
+            "ProbToSpawn": 0.6,
+            "AttachmentsToLoot": [
+                {
+                    "AttachName": "Mag_AKM_30Rnd",
+                    "ProbAttachToSpawn": 0.5
+                },
+                {
+                    "AttachName": "ACOGOptic",
+                    "ProbAttachToSpawn": 0.5
+                },
+                {
+                    "AttachName": "Mag_AKM_Drum75Rnd",
+                    "ProbAttachToSpawn": 0.2
+                },
+                {
+                    "AttachName": "MassScope",
+                    "ProbAttachToSpawn": 0.35
+                }
+            ]
+        },
+        {
+            "LootName": "MSFC_TacAR15_SBR",
+            "ProbToSpawn": 0.6,
+            "AttachmentsToLoot": [
+                {
+                    "AttachName": "Mag_STANAG_30Rnd",
+                    "ProbAttachToSpawn": 0.5
+                },
+                {
+                    "AttachName": "Mag_STANAGCoupled_30Rnd",
+                    "ProbAttachToSpawn": 0.3
+                },
+                {
+                    "AttachName": "ACOGOptic",
+                    "ProbAttachToSpawn": 0.4
+                }
+            ]
+        },
+        {
+            "LootName": "csmcmillan_mung",
+            "ProbToSpawn": 0.3,
+            "AttachmentsToLoot": [
+                {
+                    "AttachName": "Mag_cs5_10Rnd_mung",
+                    "ProbAttachToSpawn": 0.5
+                },
+                {
+                    "AttachName": "mcmillan_buttstock",
+                    "ProbAttachToSpawn": 0.3
+                }
+            ]
+        },
+        {
+            "LootName": "MassKivaari",
+            "ProbToSpawn": 0.2,
+            "AttachmentsToLoot": [
+                {
+                    "AttachName": "kivaarimag",
+                    "ProbAttachToSpawn": 0.5
+                },
+                {
+                    "AttachName": "SniperOptic",
+                    "ProbAttachToSpawn": 0.3
+                }
+            ]
+        },
+        {
+            "LootName": "MSFC_SCAR17",
+            "ProbToSpawn": 0.5,
+            "AttachmentsToLoot": [
+                {
+                    "AttachName": "MSFC_SCAR17_Mag_20Rnd",
+                    "ProbAttachToSpawn": 0.5
+                },
+                {
+                    "AttachName": "ACOGOptic",
+                    "ProbAttachToSpawn": 0.4
+                }
+            ]
+        },
+        {
+            "LootName": "Massm300",
+            "ProbToSpawn": 0.2,
+            "AttachmentsToLoot": [
+                {
+                    "AttachName": "Massm300mag",
+                    "ProbAttachToSpawn": 0.5
+                },
+                {
+                    "AttachName": "SniperOptic",
+                    "ProbAttachToSpawn": 0.4
+                }
+            ]
+        },
+        {
+            "LootName": "Massm30_camo",
+            "ProbToSpawn": 0.2,
+            "AttachmentsToLoot": [
+                {
+                    "AttachName": "Massm300mag",
+                    "ProbAttachToSpawn": 0.5
+                },
+                {
+                    "AttachName": "SniperOptic",
+                    "ProbAttachToSpawn": 0.4
+                }
+            ]
+        },
+        {
+            "LootName": "AWMreal",
+            "ProbToSpawn": 0.2,
+            "AttachmentsToLoot": [
+                {
+                    "AttachName": "Mag_AWMreal_5Rnd",
+                    "ProbAttachToSpawn": 0.5
+                },
+                {
+                    "AttachName": "SniperOptic",
+                    "ProbAttachToSpawn": 0.4
+                }
+            ]
+        },
+        {
+            "LootName": "ToxicCure",
+            "ProbToSpawn": 0.7,
+            "AttachmentsToLoot": []
+        },
+        {
+            "LootName": "AmmoBox_545x39_20Rnd",
+            "ProbToSpawn": 0.8,
+            "AttachmentsToLoot": []
+        },
+        {
+            "LootName": "AmmoBox_556x45_20Rnd",
+            "ProbToSpawn": 0.8,
+            "AttachmentsToLoot": []
+        },
+        {
+            "LootName": "AmmoBox_762x39_20Rnd",
+            "ProbToSpawn": 0.8,
+            "AttachmentsToLoot": []
+        },
+        {
+            "LootName": "AmmoBox_762x54_20Rnd",
+            "ProbToSpawn": 0.8,
+            "AttachmentsToLoot": []
+        },
+        {
+            "LootName": "AmmoBox_338",
+            "ProbToSpawn": 0.7,
+            "AttachmentsToLoot": []
+        },	
+        {
+            "LootName": "NailBox",
+            "ProbToSpawn": 0.8,
+            "AttachmentsToLoot": []
+        },
+        {
+            "LootName": "Vodka",
+            "ProbToSpawn": 0.6,
+            "AttachmentsToLoot": []
+        },
+        {
+            "LootName": "BookTheArtOfWar",
+            "ProbToSpawn": 0.05,
+            "AttachmentsToLoot": []
+        },		
+        {
+            "LootName": "BookTheMetamorphosesOfOvid",
+            "ProbToSpawn": 0.4,
+            "AttachmentsToLoot": []
+        },
+        {
+            "LootName": "BookDracula",
+            "ProbToSpawn": 0.1,
+            "AttachmentsToLoot": []
+        },
+        {
+            "LootName": "BookDeadSouls",
+            "ProbToSpawn": 0.05,
+            "AttachmentsToLoot": []
+        },
+        {
+            "LootName": "Carp",
+            "ProbToSpawn": 0.2,
+            "AttachmentsToLoot": []
+        },
+        {
+            "LootName": "BearPelt",
+            "ProbToSpawn": 0.15,
+            "AttachmentsToLoot": []
+        },		
+        {
+            "LootName": "AmmoBox_408Chey",
+            "ProbToSpawn": 0.3,
+            "AttachmentsToLoot": []
+		},
+        {
+            "LootName": "MassAmmoBox_556x45_10Rnd",
+            "ProbToSpawn": 0.45,
+            "AttachmentsToLoot": []
+		},
+        {
+            "LootName": "AmmoBox_308Win_20Rnd",
+            "ProbToSpawn": 0.45,
+            "AttachmentsToLoot": []
+		},	
+        {
+            "LootName": "Mag_CZ527_5rnd",
+            "ProbToSpawn": 0.45,
+            "AttachmentsToLoot": []
+		},		
+        {
+            "LootName": "Mag_FAL_20Rnd",
+            "ProbToSpawn": 0.45,
+            "AttachmentsToLoot": []
+		},	
+        {
+            "LootName": "Mag_AKM_30Rnd",
+            "ProbToSpawn": 0.45,
+            "AttachmentsToLoot": []
+		},		
+        {
+            "LootName": "Mag_STANAG_30Rnd",
+            "ProbToSpawn": 0.45,
+            "AttachmentsToLoot": []
+		},	
+        {
+            "LootName": "KazuarOptic",
+            "ProbToSpawn": 0.1,
+            "AttachmentsToLoot": []
+		},					
+        {
+            "LootName": "Mag_m300_7rnds",
+            "ProbToSpawn": 0.25,
+            "AttachmentsToLoot": []
+		},
+        {
+            "LootName": "Massm300mag",
+            "ProbToSpawn": 0.2,
+            "AttachmentsToLoot": []
+		},		
+        {
+            "LootName": "PN23Optic",
+            "ProbToSpawn": 0.55,
+            "AttachmentsToLoot": []
+        },	
+        {
+            "LootName": "NVGoggles",
+            "ProbToSpawn": 0.6,
+            "AttachmentsToLoot": []
+        },			
+        {
+            "LootName": "ElectronicRepairKit",
+            "ProbToSpawn": 0.75,
+            "AttachmentsToLoot": []
+        },		
+        {
+            "LootName": "TacticalBaconCan",
+            "ProbToSpawn": 0.75,
+            "AttachmentsToLoot": []
+        },	
+        {
+            "LootName": "TobaccoSeedsPack",
+            "ProbToSpawn": 0.6,
+            "AttachmentsToLoot": []
+        },	
+        {
+            "LootName": "CannabisSeedsPack",
+            "ProbToSpawn": 0.3,
+            "AttachmentsToLoot": []
+        },	
+        {
+            "LootName": "CannabisSeedsPackBlue",
+            "ProbToSpawn": 0.22,
+            "AttachmentsToLoot": []
+        },		
+        {
+            "LootName": "CannabisSeedsPackKush",
+            "ProbToSpawn": 0.15,
+            "AttachmentsToLoot": []
+        },			
+        {
+            "LootName": "MassMeth",
+            "ProbToSpawn": 0.75,
+            "AttachmentsToLoot": []
+        },	
+        {
+            "LootName": "cigarette_mung",
+            "ProbToSpawn": 0.65,
+            "AttachmentsToLoot": []
+        },			
+        {
+            "LootName": "CigarettePack_Cannabis",
+            "ProbToSpawn": 0.5,
+            "AttachmentsToLoot": []
+        },		
+        {
+            "LootName": "CigarettePack_Chernamorka",
+            "ProbToSpawn": 0.65,
+            "AttachmentsToLoot": []
+        },
+        {
+            "LootName": "CigarettePack_Merkur",
+            "ProbToSpawn": 0.65,
+            "AttachmentsToLoot": []
+        },
+        {
+            "LootName": "CigarettePack_Partyzanka",
+            "ProbToSpawn": 0.65,
+            "AttachmentsToLoot": []
+        },		
+        {
+            "LootName": "Wallet",
+            "ProbToSpawn": 0.6,
+            "AttachmentsToLoot": [
+			{
+                    "AttachName": "MoneyRuble100",
+					"ProbAttachToSpawn": 0.45
+			},
+            {
+                    "AttachName": "MoneyRuble100",
+                    "ProbAttachToSpawn": 0.55
+            },	
+            {
+                    "AttachName": "MoneyRuble100",
+                    "ProbAttachToSpawn": 0.6
+            },						
+            {
+                    "AttachName": "MoneyRuble100",
+                    "ProbAttachToSpawn": 0.8
+            },			
+            {
+                    "AttachName": "MoneyRuble100",
+                    "ProbAttachToSpawn": 1.0
+            }
+			]
+        }	
+	]	
+}

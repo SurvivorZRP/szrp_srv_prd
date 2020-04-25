@@ -1,0 +1,7 @@
+{
+    "CanPickCarLocks": 0,
+    "RaidTool": "Lockpick",
+    "ToolDamage": 50,
+    "ChanceToPickLock": -1,
+    "TimeToPickLock": 200
+}

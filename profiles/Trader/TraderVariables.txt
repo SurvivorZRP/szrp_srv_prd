@@ -1,0 +1,18 @@
+<BuySellTimer> 			1.5			// Time in Seconds that the Player has to wait untill he can buy or sell a new Item (bigger Values may reduce Server-Crashes/Errors and Server-Performance).
+<StatUpdateTimer> 		1.0			// Time in Seconds on how often the Player/Trader Stats gets updated in Safezones (bigger Value may improve Server-Performance).
+<FireBarrelUpdateTimer> 	5.0			// Time in Seconds on how often Fire Barrels gets updated in Safezones (bigger Value may improve Server-Performance but could make it possible for Players to extinguish the Fire and take Stuff out of it).
+<ZombieCleanupTimer> 		30.0			// Time in Seconds Interval of Zombie Cleanup in Safezones (smaller Values can cause bad Server-Performance).
+<VehicleCleanupTimer> 		15.0			// Time in Minutes Interval of Vehicle Cleanup in Vehicle Buy-/Sellzones. After 3 Cleanups the Vehicle will get unlocked (1 Cleanup gets also called on every Serverstart).
+<SafezoneTimeout> 		30.0			// Time in Seconds that the Player still gets secured after he left the Safezone.
+
+<TraderTaxes>			0.37			// Multiplier for SellPrice. 
+<ReplaceSellPrices>		true			// Set to true to generate a new TraderConfig2.txt on start with all SellPrices replaced by "A".
+<BalancedStockMultiplier>	1.0			// BalancedStock is determined by the Nominal Value of an item. Higher Multipler will result in slower Price increase per item sold and higher Stocks. While Stock = BalancedStock the price will be equal to the ones in TraderConfig.txt.
+<MinBalancedStock>		10			// Minimum Value for BalancedStock.
+<MaxBalancedStock>		1000			// Max Value for BalancedStock. 
+<PathToTypesXml>    		mpmissions/dayzOffline.enoch/db/types.xml     // Path to types.xml file. Make sure its correct.
+<RestockUpdateTimer>		A			// Time in seconds until the next check for items which needs to be restocked. Higher value may increase server performance. Set to A if you want the best value to be calculated automaticaly. To disable Restock set timer to -1 (reduces server load).
+<RestockPercent>		0.33			// Multiplier for Restock. 1 will restock the Trader to BalancedStock. Formula: (BalancedStock - CurrentStock) * RestockPercent
+<DefaultRestockTime>		86400			// Default Time for each Item that has "<RestockTime> 0" configured.
+
+<FileEnd>						// This has to be on the End of this File and is very important!

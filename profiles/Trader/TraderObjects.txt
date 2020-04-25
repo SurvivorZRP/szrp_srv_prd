@@ -1,0 +1,193 @@
+// ------------------------------------------------------ Trader Markers -------------------------------------------------------
+
+//Consumption Trader
+<TraderMarker> 			0
+<TraderMarkerPosition>	6090.01,	310.692,	6131.93
+<TraderMarkerSafezone>	80
+
+//Misc Trader
+<TraderMarker> 			1
+<TraderMarkerPosition>	6088.29,	311.207,	6145.83
+<TraderMarkerSafezone>	80
+
+//Weapon Trader
+<TraderMarker> 			2
+<TraderMarkerPosition>	6116.67,	309.176,	6157.76
+<TraderMarkerSafezone>	80
+
+//Weapon Supplies
+<TraderMarker> 			3
+<TraderMarkerPosition>	6119.27,	308.880,	6154.26
+<TraderMarkerSafezone>	80
+
+//Clothing Trader
+<TraderMarker> 			4
+<TraderMarkerPosition>	6106.59,	310.662,	6166.14
+<TraderMarkerSafezone>	80
+
+//Vehicles Trader	
+<TraderMarker> 			5
+<TraderMarkerPosition>	6120.53,	307.926,	6125.25
+<TraderMarkerSafezone>	80
+<VehicleSpawn>			6125.98,	307.767,	6128.01
+<VehicleSpawnOri>		121.219,	-1.70074,	0.816026			
+
+//Military Clothing
+<TraderMarker> 			6
+<TraderMarkerPosition>	6103.35,	310.655,	6166.25
+<TraderMarkerSafezone>	80
+
+//Black Market Weapons
+<TraderMarker> 			7
+<TraderMarkerPosition>	1101.18,	447.262,	11401.9
+<TraderMarkerSafezone>	0
+
+//Black Market Drugs
+<TraderMarker> 			8
+<TraderMarkerPosition>	1105.48,		447.404,		11409.7
+<TraderMarkerSafezone>	0
+
+//Grey Market Drugs
+<TraderMarker> 			9
+<TraderMarkerPosition>	11024,		346.02,		4431.8
+<TraderMarkerSafezone>	0
+
+// ------------------------------------------------------ Objects to Spawn ------------------------------------------------------
+
+<Object> 			SurvivorF_Eva						
+<ObjectPosition>	6090.01,	310.692,	6131.93
+<ObjectOrientation>	63.143261,	0, 			0
+<ObjectAttachment>	BoxCerealCrunchin
+<ObjectAttachment>	MiniDress_WhiteChecker
+<ObjectAttachment>	Breeches_White
+
+
+<Object> 			SurvivorM_Niki						
+<ObjectPosition>	6088.29,	311.207,	6145.83
+<ObjectOrientation>	95.200394,	0,			0
+<ObjectAttachment>	WorkingBoots_Brown
+<ObjectAttachment>	CargoPants_Grey
+<ObjectAttachment>	Shirt_RedCheck
+<ObjectAttachment>	WorkingGloves_Brown
+<ObjectAttachment>	WoodAxe	
+
+
+<Object> 			SurvivorM_Rolf						
+<ObjectPosition>	6116.67,	309.176,	6157.76
+<ObjectOrientation>	-125.843391, 0,			0
+<ObjectAttachment>	TTSKOBoots
+<ObjectAttachment>	TTSKOPants
+<ObjectAttachment>	TTSKOJacket_Camo
+<ObjectAttachment>	BaseballCap_Beige
+<ObjectAttachment>	Bandana_CamoPattern
+<ObjectAttachment>	TacticalGloves_Beige
+<ObjectAttachment>	PlateCarrierVest
+<ObjectAttachment>	M4_Suppressor
+<ObjectAttachment>	M4A1
+<ObjectAttachment>	M4_MPBttstck
+<ObjectAttachment>	M4_RISHndgrd
+<ObjectAttachment>	SVD
+<ObjectAttachment>	PSO1Optic
+
+
+<Object> 			SurvivorM_Oliver						
+<ObjectPosition>	6119.27,	308.880,	6154.26
+<ObjectOrientation>	-127.801376, 0,			0
+<ObjectAttachment>	Mag_STANAG_30Rnd
+<ObjectAttachment>	TacticalShirt_Tan
+<ObjectAttachment>	TTSKOBoots
+<ObjectAttachment>	BaseballCap_Camo
+<ObjectAttachment>	BDU Pants
+<ObjectAttachment>	UKAssVest_Camo
+<ObjectAttachment>	OMNOGloves_Grey
+
+
+<Object> 			SurvivorF_Linda						
+<ObjectPosition>	6106.59,	310.662,	6166.14
+<ObjectOrientation>	177.064484, 0,			0
+<ObjectAttachment>	Ballerinas_White
+<ObjectAttachment>	ShortJeans_Black
+<ObjectAttachment>	BoonieHat_Black
+<ObjectAttachment>	Blouse_White
+
+
+<Object> 			SurvivorM_Peter						
+<ObjectPosition>	6120.53,	307.926,	6125.25
+<ObjectOrientation>	0, 			0,			0
+<ObjectAttachment>	ReflexVest
+<ObjectAttachment>	HikingBoots_Black
+<ObjectAttachment>	CargoPants_Blue
+<ObjectAttachment>	Hoodie_Black
+<ObjectAttachment>	RadarCap_Black
+
+
+<Object> 			SurvivorF_Irena						
+<ObjectPosition>	6103.35,	310.655,	6166.25
+<ObjectOrientation>	179.038910, 0,			0
+<ObjectAttachment>	BDUPants
+<ObjectAttachment>	TShirt_Green
+<ObjectAttachment>	BaseballCap_Green
+<ObjectAttachment>	TacticalGloves_Green
+<ObjectAttachment>	TTSKOBoots
+<ObjectAttachment>	UKAssVest_Camo
+<ObjectAttachment>	AviatorGlasses
+
+// Weapons Trader - Black Market
+<Object> 			SurvivorM_Lewis
+<ObjectPosition>	1101.18,	447.262,	11401.9
+<ObjectOrientation> 0, 	0,		0
+<ObjectAttachment>	BookBible
+<ObjectAttachment>	TShirt_Grey
+<ObjectAttachment>	CargoPants_Black
+<ObjectAttachment>	HikingBoots_Brown
+
+// Drugs Trader - Black Market
+<Object> 			SurvivorM_Cyril
+<ObjectPosition>	1105.48, 447.404, 11409.7
+<ObjectOrientation>	0, 0,	0
+<ObjectAttachment>	cigarette_mung
+<ObjectAttachment>	Hoodie_Grey
+<ObjectAttachment>	Jeans_Blue
+<ObjectAttachment>	JoggingShoes_Red
+
+// Weed Trader - Gieraltow
+<Object> 			SurvivorM_Peter
+<ObjectPosition>	11024,	346.02,	4431.8
+<ObjectOrientation>	0, 	0,		0
+<ObjectAttachment>	joint_mung
+<ObjectAttachment>	jesterhat_mung
+<ObjectAttachment>	Shirt_GreenCheck
+<ObjectAttachment>	CargoPants_Green
+<ObjectAttachment>	WorkingBoots_Grey
+
+<Object>			BBP_Cement_Mixer
+<ObjectPosition>	11424.311523,	181.192352,	9500.611328
+<ObjectOrientation>	  94.744873,	  1.076530,	   -1.791006
+
+<Object>			BBP_Cement_Mixer
+<ObjectPosition>	6239.533691,	187.715454,	11272.064453
+<ObjectOrientation>	  -174.003143,	  0.094937,	   -0.181620
+
+<Object>			BBP_Cement_Mixer
+<ObjectPosition>	3090.781982,	234.224503,	6761.251465
+<ObjectOrientation>	  90.282021,	  -3.867756,	   -1.662549
+
+<Object>			BBP_Cement_Mixer
+<ObjectPosition>	812.855042,	242.349579,	5519.182129
+<ObjectOrientation>	  41.920609,	  1.646587,	   -0.137370
+
+<Object>			BBP_Cement_Mixer
+<ObjectPosition>	5892.320313,	392.666656,	3906.097412
+<ObjectOrientation>	  -179.632416,	  0.000000, 0.000000
+
+<Object>			BBP_Cement_Mixer
+<ObjectPosition>	11662.257813,	211.953064, 344.840118
+<ObjectOrientation>	 -134.872787,	-2.517148,	0.907054
+
+<Object>			BBP_Cement_Mixer
+<ObjectPosition>	10888.239258,	333.284058, 4383.60839
+<ObjectOrientation>	   16.388357,	-7.060572, 	0.083464
+
+
+//<OpenFile> FileName.txt								// Links to another File; Must be right above <FileEnd>!
+<FileEnd>												// This has to be on the End of this File and is very importand!

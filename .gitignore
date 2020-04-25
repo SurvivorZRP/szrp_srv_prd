@@ -1,0 +1,14 @@
+/*
+*log
+log*
+backup*
+*.RPT
+*.ADM
+# Files to not ignore
+!.gitignore
+!/mpmissions/
+storage_1/
+!/profiles/
+**/Traderstock/
+**/BattlEye/
+

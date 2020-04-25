@@ -1,0 +1,82 @@
+Tiredness							= 1
+
+	TireTime (minutes)				= 210
+	EyeClosingPoint  (percent)		= 19
+	TextReports						= 1
+	EnergizingDrinkGain (percent)	= 20
+	EnergizingDrinkClass			= SodaCan_Cola
+	EnergizingDrinkClass			= SodaCan_Pipsi
+	EnergizingDrinkClass			= SodaCan_Spite
+	EnergizingDrinkClass			= MSFCBankaBaikal
+	EnergizingDrinkClass			= MSFCBankaSTALKEREnergy
+	EnergizingDrinkClass			= MSFCBankaCJ
+	EnergizingDrinkClass			= MSFCBankaSPRUNK
+	EnergizingDrinkClass			= MSFCBankaSPRUNKextreme
+
+	SleepingBagClass = MediumTent
+	SleepingBagClass = sleepingbag_green_mung_Deployed
+	SleepingBagClass = sleepingbag_red_mung_Deployed
+	SleepingBagClass = sleepingbag_yellow_mung_Deployed
+	SleepingBagClass = sleepingbag_blue_mung_Deployed
+	SleepingBagClass = MD_Bed_Double
+	SleepingBagClass = MD_Bed_Folding
+	SleepingBagClass = MD_Bed_Wood
+
+	SleepingDOF						= 0
+
+ZombieBleedChance (percent)			= 15
+ZombieSalmonellaChance (percent)	= 25
+WoundInfectionChance (percent)		= 25
+ZombieArmFractureChance (percent)	= 15
+FeverActive							= 1
+BrainDisease						= 1
+SalineBloodRegen					= 1
+TestBloodSelf						= 1
+TestBloodTarget						= 1
+TestBloodToxin						= 1
+
+
+AlcoholicDrinkClass               	= Vodka = 4
+AlcoholicDrinkClass                	= Cannabis = 70
+AlcoholicDrinkClass                	= PsilocybeMushroom = 80
+AlcoholicDrinkClass                	= AmanitaMushroom = 70
+AlcoholicDrinkClass                	= DisinfectantAlcohol = 5
+AlcoholicDrinkClass                	= SodaCan_Kvass = 0.5
+AlcoholicDrinkClass                	= MSFCBeerZhigulevskoe = 1.5
+AlcoholicDrinkClass                	= MSFCBankaJackSmithWhiskey = 2.5
+AlcoholicDrinkClass                	= MSFCBankaBeerAmsterdam = 1.5
+AlcoholicDrinkClass                	= MSFCBankaBeerPivasProvodnik = 1.5
+AlcoholicDrinkClass                	= MSFCBankaBeerHeineken = 1.5
+AlcoholicDrinkClass                	= MSFCBankaBeerFranziskanerWeissbier = 1.5
+AlcoholicDrinkClass                	= MSFCBeerZhigulevskoeBarnoe = 1.5
+AlcoholicDrinkClass                	= MSFCBeerZhigulevskoeSoviet = 1.5
+AlcoholicDrinkClass                	= MSFCBeerBaltika9 = 1.5
+
+
+DeclareZone = 0 = 1448.70 = 11395.84 = 1600 = CAUTION: YOU ARE NEARING A PVP ZONE, MIND THE BOUNDARY MARKERS = YOU ARE LEAVING A PVP ZONE
+DeclareZone = 0 = 3786.63 = 11267.69 = 1900 = CAUTION: YOU ARE NEARING A PVP ZONE, MIND THE BOUNDARY MARKERS = YOU ARE LEAVING A PVP ZONE
+
+ToxinAccumulationTimeMin = 5
+ToxinAccumulationTimeMax = 60
+
+ProtectionSuit = NBCBootsGray = 10
+ProtectionSuit = NBCGlovesGray = 10
+ProtectionSuit = NBCHoodGray = 10
+ProtectionSuit = NBCJacketGray = 20
+ProtectionSuit = NBCPantsGray = 20
+
+ProtectionSuit = GP5GasMask = 30 = 1
+ProtectionSuit = GasMask = 30 = 1
+ProtectionSuit = stalker_gasmask_white_mung = 30 = 1
+ProtectionSuit = stalker_gasmask_black_mung = 30 = 1
+ProtectionSuit = mag3_gasmask_mung = 30 = 1
+ProtectionSuit = Massblackgp5 = 30 = 1
+ProtectionSuit = PMK_5A_Gas_Mask = 30 = 1
+ProtectionSuit = HockeyMask = 0 = 1
+ProtectionSuit = NioshFaceMask = 0 = 1
+ProtectionSuit = SurgicalMask = 5 = 1
+ProtectionSuit = WeldingMask = 0 = 1
+ProtectionSuit = clownmask_mung = 0 = 1
+ProtectionSuit = dollmask_mung = 0 = 1
+ProtectionSuit = hannibal_mask_mung = 0 = 1
+ProtectionSuit = PumpkinHelmet = 0 = 1

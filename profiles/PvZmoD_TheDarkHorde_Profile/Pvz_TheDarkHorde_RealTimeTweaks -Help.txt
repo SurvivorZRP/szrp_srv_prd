@@ -1,0 +1,170 @@
+THIS IS A HELP FILE, use Pvz_TheDarkHorde_RealTimeTweaks.JSON to modify data, save it and press PavNum6 in game to refresh values 
+(don't forget to add your idsteam64 in admin.txt)
+
+Use INTEGERS values (no decimals, no true/false...)
+!! NO COMMA AT THE END OF THE LAST LINE !!
+
+{
+	"TheDarkHorde_RealTimeTweak": 
+	{
+		"0" : 0,   		// (Debug) Show debug messages (0 disable, 1 enable)
+		"1" : 0,		// (Debug) Use a "light" fog to see zeds spawn and despawn (0 disable=>use normal fog, 1 enable=>use light fog)
+		
+		"2" : 6,		// (Configure) Deplacement Type : -1=> Disable The Dark Horde, 0=>Total Random, 1=>Random zone List (Pvz_DarkHorde_StartPoints.c), 2=>Waypoints (Pvz_DarkHorde_Waypoints.c), 3=>Fixed start/end points ("18"to"21" values), 4=>Fixed start then random move("18"and"19" values), 5=>Fixed end position then random when position reached("20"and"21" values), 6=> Spawn at random position then go to closest player position
+		"3" : 1,		// (Configure) Position Persistence when server restarts (0 disable, 1 enable)
+		
+/// Zombie Number
+		"4" : 30,	  	// (Tweak Difficulty) Maximum Number Of Zombies in Day time (Adjust "8" spawn rate if you modify this value)
+		"5" : 20,		// (Tweak Difficulty) Maximum Number Of Zombies in Night time (if "50" night time is activated) (Adjust "12" spawn rate if you modify this value)
+		
+/// Horde Speed		
+		"6" : 10,  		// (Tweak Speed) Default Horde Move Speed (in Day time)
+		"7" : 20,  		// (Tweak Speed) Horde Move Speed when horde Master have detected a player (in Day time)		
+		"8" : 1500,  	// (Tech) Zombies spawn rate in Day time 500=>1 zombie spawn every 0.5 seconds (until maxi nbr is reached)
+		"9" : -3,		// (Tech) modify this value if zeds spawn "outside the fog" (if you modify "6" horde speed)
+		
+		"10" : 10,  	// (Tweak Speed) Default Horde Move Speed (in Night time)
+		"11" : 20,  	// (Tweak Speed) Horde Move Speed when horde Master have detected a player (in Night time)		
+		"12" : 2000,  	// (Tech) Zombies spawn rate in Night time 500=>1 zombie spawn every 0.5 seconds (until maxi nbr is reached)
+		"13" : -5,		// (Tech) modify this value if zeds spawn "outside the fog" (if you modify "11" horde speed)
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+/// Random Move Distance 	(used if "2" is set to 0, 1, 4 or 5) 	
+		"14" : 500,  	// (Tweak Distances) Minimum distance before change direction of random moves
+		"15" : 1000, 	// (Tweak Distances) Maximum distance before change direction of random moves
+	
+/// Waypoints  				(used if "2" is set to 2) 
+		"16" : 1,  		// (Tweak Waypoints) Start Waypoint Number : 0 => start at a random waypoint (1=>start at first waypoint - 2=>start at second waypoint...)
+		"17" : 0, 		// (Tweak Waypoints) Random Waypoints sequence : 0 => waypoints are chosed in fixed sequence  / 1 => waypoints are chosed randomly in the waypoints list (coordinates of waypoints are set in Pvz_DarkHorde_Waypoints.c)
+
+/// Start-End Positions		(used if "2" is set to 3 or 4) 	
+		"18" : 6073, 	// (Tweak Position) Horde Start Position (Horizontally on the map)
+		"19" : 7769,	// (Tweak Position) Horde Start Position (Vertically on the map)
+		"20" : 7065,	// (Tweak Position) Horde End Position (Horizontally on the map)
+		"21" : 7699, 	// (Tweak Position) Horde End Position (Vertically on the map)
+		
+////////////////////////////////////////////////////////////////////////////////////////////		
+				
+// Spawn / Despawn Radius
+		"22" : 3,  		// (Tweak Zombies) Zombie Spawn Radius (in meters)
+		"23" : 30,  	// (Tweak Zombies) Minimum distance (in meters) to the horde to despawn calm zombies
+		"24" : 50,  	// (Tweak Zombies) Maximum distance (in meters) to the horde to despawn calm zombies 
+		"25" : 100,  	// (Tweak Zombies) Minimum distance (in meters) to the horde to despawn non-calm zombies 
+		"26" : 120,  	// (Tweak Zombies) Maximum distance (in meters) to the horde to despawn non-calm zombies  
+
+		"27" : 2,  		// (Tweak Master) Master Spawn Radius (in meters)
+		"28" : 10,  	// (Tweak Master) Minimum distance (in meters) to the horde to despawn calm Master
+		"29" : 10,  	// (Tweak Master) Maximum distance (in meters) to the horde to despawn calm Master 
+		"30" : 50,  	// (Tweak Master) Minimum distance (in meters) to the horde to despawn non-calm Master
+		"31" : 60,  	// (Tweak Master) Maximum distance (in meters) to the horde to despawn non-calm Master
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+// Zombie removal timers	
+		"32" : 3,  		// (Timer) Time (in seconds) to Delete zombies when they are outside their radius
+		"33" : 30,		// (Timer) Time (in seconds) to Delete zombies when they have been killed by a player		
+		"34" : 15,  	// (Timer) Time (in seconds) to Delete zombies when the horde master have been killed by a player	
+		"35" : 300,  	// (Timer) Time (in seconds) to Delete Master when he have been killed by a player
+		"36" : 3,		// (Tweak) Regeneration rate (health points/seconde) of horde Master (to prevent them become too weak for if a player can't "finish" him)
+		
+/// Compass (to allow players to find the horde when they press NumPad0)
+		"37" : 2, 		// (Tweak Compass) Show Horde Direction Precision : 0=>no direction shown / 1=>four Cardinal points precision / 2=>eight Cardinal points / 3=>sixteen Cardinal points (East-North-East for example)
+		"38" : 0,  		// (Tweak Compass) Show Horde Distance (0=>Disable / 1=>Enable)
+		"39" : 1000,	// (Tweak Compass) Minimum Distance To Show Message (in meters) if player is too close he don't see its direction anymore and have to find the horde himself
+		"40" : 1		// (Tweak Compass) Show message at players connection (0: Disable / 1: Enable)
+
+/// Teleport Players when new horde is created (keep "47" and "48" to 0 to disable this)		
+		"41" : 0,		// (Debug) playerTpRelativePositionX
+		"42" : 0,		// (Debug) playerTpRelativePositionZ		
+		"43" : 30, 		// (Debug) teleportPlayerTimer (s)	
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+/// Night Config
+		"44" : 1,		// (Night Config) Night Time Active : 0=>Disable (day time configuration is always used)	/ 1=>Used DayZ day-night cycle / 2=>Force day-night time ("51" to "54")  
+		"45" : 20,		// (Night Config) Beginning of the night (Hour)	!!! don't begin the value by 0 !!!
+		"46" : 30,		// (Night Config) Beginning of the night (Minute) 	!!! don't begin the value by 0 !!! (don't set 00, set 0 instead if needed)
+		"47" : 6,		// (Night Config) End of the night (Hour) 			!!! don't begin the value by 0 !!! (if you want to set 6am use value 6 not 06)
+		"48" : 30,		// (Night Config) End of the night (Minute) 		!!! don't begin the value by 0 !!! (don't set 00, set 0 instead if needed)
+		
+////////////////////////////////////////////////////////////////////////////////////////////
+
+/// Other		
+		"49" : 100,		// (Tech) Minimum Distance (in meters) to players to spawn the horde (to avoid new horde spawning "on" the players)
+		"50" : 1000,	// (Tech) Maximum Distance (in meters) to spawn zombies (to avoid spawning zeds if no players around and uselessly consuming server resources)		
+		"51" : 300,		// (Tech) Horde move speed ratio (%) when no player is in "50" radius		
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+/// Day Fog Configuration
+		"52" : 100, 	// (Visual) particulSystem_birth_rate_Day (%)
+		"53" : 100, 	// (Visual) particulSystem_size_Day (%)
+		"54" : 100, 	// (Visual) particulSystem_lifetime_Day (%)
+		
+/// Night Fog Configuration
+		"55" : 100,		// (Visual) particulSystem_birth_rate_Night (%)
+		"56" : 100, 	// (Visual) particulSystem_size_Night (%)
+		"57" : 100, 	// (Visual) particulSystem_lifetime_Night (%)
+		
+////////////////////////////////////////////////////////////////////////////////////////////
+
+/// Zombies Characteristics 
+		"58" : 100, 	// (Health Points %) Day   Master
+		"59" : 100, 	// (Health Points %) Night Master		
+		"60" : 100, 	// (Health Points %) Day   Horde Zombies
+		"61" : 100, 	// (Health Points %) Night Horde Zombies
+		"62" : 100, 	// (Health Points %) Other Zombies
+
+		"63" : 100000, 	// (Restistance to the cars %) Master
+		"64" : 1000, 	// (Restistance to the cars %) Horde Zombies
+		"65" : 100, 	// (Restistance to the cars %) Other Zombies
+
+		"66" : 1, 		// (Zombies Behaviour) Allow "Gosht Zombies" to go throught walls (0:no 1:yes)
+		"67" : 1, 		// (Zombies Behaviour) Allow "Night Zombies" to teleport. This option is weird but useful to uncamp players on cars (0:No Teleport / 1:Only in Night time / 2:All Day and night)
+		"68" : 1, 		// (Master Behaviour) Master is bulletproof (0:no / 1:yes / 2:Only NightMaster is bulletproof / 3:Only DayMaster is bulletproof) if you use another value than 1 you should modify the "playerConnectionMessage" in Pvz_TheDarkHorde_Messages.c
+		"69" : 2, 		// (Master Behaviour) Night Master is teleported when hit (0:no teleport on hit / 1:teleport on fireweapon hit / 2:teleport on melee weapon hit / 3:teleport on fireweapon and melee weapon hit) use minus values if you want to apply hit teleportation to day master too
+		
+////////////////////////////////////////////////////////////////////////////////////////////		
+
+/// Fog Color	
+		"70" : 1, 		// (Visual) Horde Fog color at Day time 	1:Black / 2:Red / 0:Bleu (for debug)
+		"71" : 2, 		// (Visual) Horde Fog color at Night time	1:Black / 2:Red / 0:Bleu (for debug)
+		
+////////////////////////////////////////////////////////////////////////////////////////////
+		
+/// Horde options	
+		"72" : 300, 	// (Timer) Minimum Time before the horde respawn after been defeated (s)
+		"73" : 600, 	// (Timer) Maximum Time before the horde respawn after been defeated (s)
+		"74" : 1, 		// Show Players Horde Kills
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
+		"75" : 999, 	// Not_used_yet
+		"76" : 999, 	// Not_used_yet		
+		"77" : 999, 	// Not_used_yet
+		"78" : 999, 	// Not_used_yet
+		"79" : 999, 	// Not_used_yet
+		"80" : 999, 	// Not_used_yet
+		"81" : 999, 	// Not_used_yet
+		"82" : 999, 	// Not_used_yet
+		"83" : 999, 	// Not_used_yet
+		"84" : 999, 	// Not_used_yet
+		"85" : 999, 	// Not_used_yet
+		"86" : 999, 	// Not_used_yet
+		"87" : 999, 	// Not_used_yet
+		"88" : 999, 	// Not_used_yet
+		"89" : 999, 	// Not_used_yet
+		"90" : 999, 	// Not_used_yet
+		"91" : 999, 	// Not_used_yet
+		"92" : 999, 	// Not_used_yet
+		"93" : 999, 	// Not_used_yet
+		"94" : 999, 	// Not_used_yet
+		"95" : 999, 	// Not_used_yet
+		"96" : 999, 	// Not_used_yet
+		"97" : 999, 	// Not_used_yet
+		"98" : 999, 	// Not_used_yet
+		"99" : 999  	// Not_used_yet
+	}
+}
