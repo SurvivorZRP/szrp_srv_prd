@@ -91,6 +91,12 @@ class CustomMission: MissionServer
 				itemBs.SetQuantity(4);
 			SetRandomHealth(itemEnt);
 
+			itemEnt = itemTop.GetInventory().CreateInInventory("HuntingKnife");
+			itemEnt = itemTop.GetInventory().CreateInInventory("RoadFlare");
+			itemEnt = itemTop.GetInventory().CreateInInventory("MakarovIJ70");
+			itemEnt = itemTop.GetInventory().CreateInInventory("Mag_IJ70_8Rnd");
+			itemEnt = itemTop.GetInventory().CreateInInventory("AmmoBox_380_35rnd");
+
 			rand = Math.RandomFloatInclusive(0.0, 1.0);
 			if ( rand < 0.35 )
 				itemEnt = player.GetInventory().CreateInInventory("WaterBottle");
@@ -98,21 +104,6 @@ class CustomMission: MissionServer
 				itemEnt = player.GetInventory().CreateInInventory("Canteen");
 			else
 				itemEnt = player.GetInventory().CreateInInventory("Vodka");
-			SetRandomHealth(itemEnt);
-
-			itemEnt = itemTop.GetInventory().CreateInInventory("HuntingKnife");
-			SetRandomHealth(itemEnt);
-
-			itemEnt = itemTop.GetInventory().CreateInInventory("RoadFlare");
-			SetRandomHealth(itemEnt);
-
-			itemEnt = itemTop.GetInventory().CreateInInventory("MakarovIJ70");
-			SetRandomHealth(itemEnt);
-
-			itemEnt = itemTop.GetInventory().CreateInInventory("Mag_MKII_10Rnd");
-			SetRandomHealth(itemEnt);
-
-			itemEnt = itemTop.GetInventory().CreateInInventory("AmmoBox_380_35rnd");
 			SetRandomHealth(itemEnt);
 
 			rand = Math.RandomFloatInclusive(0.0, 1.0);
