@@ -89,7 +89,6 @@ class CustomMission: MissionServer
 			itemEnt = itemTop.GetInventory().CreateInInventory("Rag");
 			if ( Class.CastTo(itemBs, itemEnt ) )
 				itemBs.SetQuantity(4);
-			SetRandomHealth(itemEnt);
 
 			itemEnt = itemTop.GetInventory().CreateInInventory("HuntingKnife");
 			itemEnt = itemTop.GetInventory().CreateInInventory("RoadFlare");
@@ -104,7 +103,6 @@ class CustomMission: MissionServer
 				itemEnt = player.GetInventory().CreateInInventory("Canteen");
 			else
 				itemEnt = player.GetInventory().CreateInInventory("Vodka");
-			SetRandomHealth(itemEnt);
 
 			rand = Math.RandomFloatInclusive(0.0, 1.0);
 			if ( rand < 0.35 )
@@ -113,7 +111,6 @@ class CustomMission: MissionServer
 				itemEnt = player.GetInventory().CreateInInventory("PeachesCan_Opened");
 			else
 				itemEnt = player.GetInventory().CreateInInventory("TacticalBaconCan_Opened");
-			SetRandomHealth(itemEnt);
 		}
 	}
 };
