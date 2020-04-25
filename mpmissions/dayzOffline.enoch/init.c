@@ -89,12 +89,39 @@ class CustomMission: MissionServer
 			itemEnt = itemTop.GetInventory().CreateInInventory("Rag");
 			if ( Class.CastTo(itemBs, itemEnt ) )
 				itemBs.SetQuantity(4);
-
 			SetRandomHealth(itemEnt);
 
-			string chemlightArray[] = { "Chemlight_White", "Chemlight_Yellow", "Chemlight_Green", "Chemlight_Red" };
-			int rndIndex = Math.RandomInt(0, 4);
-			itemEnt = itemTop.GetInventory().CreateInInventory(chemlightArray[rndIndex]);
+			rand = Math.RandomFloatInclusive(0.0, 1.0);
+			if ( rand < 0.35 )
+				itemEnt = player.GetInventory().CreateInInventory("WaterBottle");
+			else if ( rand > 0.65 )
+				itemEnt = player.GetInventory().CreateInInventory("Canteen");
+			else
+				itemEnt = player.GetInventory().CreateInInventory("Vodka");
+			SetRandomHealth(itemEnt);
+
+			itemEnt = itemTop.GetInventory().CreateInInventory("HuntingKnife");
+			SetRandomHealth(itemEnt);
+
+			itemEnt = itemTop.GetInventory().CreateInInventory("RoadFlare");
+			SetRandomHealth(itemEnt);
+
+			itemEnt = itemTop.GetInventory().CreateInInventory("MakarovIJ70");
+			SetRandomHealth(itemEnt);
+
+			itemEnt = itemTop.GetInventory().CreateInInventory("Mag_MKII_10Rnd");
+			SetRandomHealth(itemEnt);
+
+			itemEnt = itemTop.GetInventory().CreateInInventory("AmmoBox_380_35rnd");
+			SetRandomHealth(itemEnt);
+
+			rand = Math.RandomFloatInclusive(0.0, 1.0);
+			if ( rand < 0.35 )
+				itemEnt = player.GetInventory().CreateInInventory("sandwich_mung");
+			else if ( rand > 0.65 )
+				itemEnt = player.GetInventory().CreateInInventory("PeachesCan_Opened");
+			else
+				itemEnt = player.GetInventory().CreateInInventory("TacticalBaconCan_Opened");
 			SetRandomHealth(itemEnt);
 		}
 	}
