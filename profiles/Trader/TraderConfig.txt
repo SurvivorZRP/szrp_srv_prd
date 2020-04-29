@@ -58,7 +58,10 @@
 		SpaghettiCan,                               *,		150,	75
 		BakedBeansCan,                              *,		150,	75
 		TacticalBaconCan,                           *,		150,	75
-		sandwich_mung,                              *,		200,	100
+		sandwich_mung,                              *,		200,	25
+		MassMRE4,                              		*,		500,	125
+		MassMRE9,                              		*,		500,	125
+		MassMRE10,                              	*,		500,	125
 	<Category> Meat
 		ChickenBreastMeat,                          S,		-1,		200
 		GoatSteakMeat,                              S,		-1,		150
@@ -123,13 +126,20 @@
 		MSFCCanteenBlack,                           *,		100,	50
 	<Category> Medical Supplies
 		BandageDressing,                            4,		100,	30
+		FieldBandageDressing,                       *,		100,	30
+		SamSplint,									*,		100,	30
+		Toiletpaper,								*,		50,		25
 		BloodTestKit,                              	*,		30,		15
 		DisinfectantSpray,                          *,		150,	75
+		VanishSpray,                                *,		150,	75
 		Heatpack,                                   *,		60,		30
 		StartKitIV,                                 *,		120,	45
 		SalineBag,                                  *,		180,	95
 		BloodBagEmpty,                              *,		120,	60
 		FirstAidKit,                                *,		540,	250
+		FirstAidKit_Grizzly,                        *,		540,	250
+		FirstAidKit_Car,                            *,		540,	250
+		Army_FirstAidKit,                           *,		540,	250
 		MedicalScrubsHat_Blue,                      *,		45,		15
 		MedicalScrubsHat_White,                     *,		45,		15
 		MedicalScrubsHat_Green,                     *,		45,		15
@@ -174,10 +184,14 @@
 		Euro100,									1,		100,	-1
 <Trader> Misc Trader // ID=1
 	<Category> Tools (small)
+		ChernarusMap,								*,		5,		-1
 		Screwdriver,                                *,		75,		25
+		Screwdriver_2,                              *,		75,		25
 		Wrench,                                     *,		75,		25
 		SewingKit,                                  *,		30,		10
 		Pliers,                                     *,		75,		25
+		Pliers_Red,                                 *,		75,		25
+		Pliers_Yellow,                              *,		75,		25
 		LeatherSewingKit,                           *,		75,		25
 		Whetstone,                                  *,		45,		15
 		Hammer,                                     *,		60,		20
@@ -197,6 +211,8 @@
 		Binoculars,                                	*,		60,		20
 		FishingRod,                                 *,		120,    40
 		BBP_Tape_Measure,                           *,		40,     13
+		ToolsRepairKit,                             *,		45,		15
+		WD40,                                   	*,		320,	106
 	<Category> Tools (big)
 		LugWrench,                                  *,		8,		2
 		Shovel,                                     *,		250,	83
@@ -207,12 +223,22 @@
 		BBP_Step_LadderKit,                         *,		800,	266
 	<Category> Electrical
 		Battery9V,                                  *,		20,		6
-		PersonalRadio,                              *,		240,	80
+		Battery9V_1,                                *,		20,		6
+		Battery9V_2,                                *,		20,		6
+		Battery9V_3,                                *,		20,		6
+		Battery9V_4,                                *,		20,		6
+		Motorola,                              		*,		240,	80
+		Motorola_2,                              	*,		240,	80
+		Motorola_3,                              	*,		240,	80
+		Motorola_4,                              	*,		240,	80
+		Motorola_5,                              	*,		240,	80
+		Falcon3_Radio,                              *,		400,	133
+		TacSatRadio,                              	*,		400,	133
+		TacSatBattery,                             	*,		125,	65
 		Megaphone,                                  *,		200,	66
 		ElectronicRepairKit,                        *,		70,		23
 		CableReel,                                  *,		240,	80
 		BatteryCharger,                             *,		80,		26
-		BaseRadio,                                  *,		400,	133
 		Rangefinder,                                *,		120,	40
 		BBP_Gang_Plug,                              *,		800,	266
 		PowerGenerator,                             *,		3000,	1000
@@ -267,6 +293,7 @@
 		MediumGasCanister,							*,		200,	66
 		LargeGasCanister,                           *,		400,	133
 		CanisterGasoline,                           *,      600,    200
+		Nails,										20,		114,	38
 		NailBox,                                   	*,		400,    133
 		BarbedWire,                                 *,      450,	200
 		Camonet,                                    *,		600,	250
@@ -343,7 +370,7 @@
 		Msp_WaterBarrel_Valve,                      *,		100,	50
 		Msp_WaterBarrel_Valve_Darkwood,             *,		100,	50
 	<Category> Base Storage
-		hardigg_Mung,                                                          *,                   600,                 300
+		hardigg_Mung,                               *,      600,    300
 		hardigg2_Mung,                                                         *,                   800,                 400
 		Locker,                                                                *,                   300,                 150
 		AmmoBox,                                                               *,                   200,                 50
@@ -542,7 +569,10 @@
 		PepperSeedsPack,                                                       *,                   50,                  5
 		ZucchiniSeedsPack,                                                     *,                   60,                  6
 		PumpkinSeedsPack,                                                      *,                   100,                 10
-		GardenLime,                                                            *,                   75,                  30
+		GardenLime,                *,      75,    30
+		GardenLime_1,              *,      75,    30
+		GardenLime_2,              *,      75,    30
+		GardenLime_3,              *,      75,    30
 	<Category> Fluffy Pets
 		Bear_Beige,                                                            *,                   50,                  10
 		Bear_Dark,                                                             *,                   50,                  10
@@ -998,7 +1028,6 @@
 		Mag_AKM_30Rnd,                                                         M,                   500,                 250
 		Mag_AKM_Palm30Rnd,                                                     M,                   600,                 300
 		Mag_AKM_Drum75Rnd,                                                     M,                   700,                 350
-		Mass762Stanag,                                                         M,                   -1,                  -1
 		Mag_AK74_30Rnd,                                                        M,                   500,                 250
 		Mag_AK101_30Rnd,                                                       M,                   500,                 250
 		Mag_STANAG_30Rnd,                                                      M,                   500,                 250
@@ -1774,8 +1803,8 @@
 		ChestHolster,                              	*,		450,	300
 <Trader> Vehicles Trader // ID=5
 	<Category> Cars & SUVs
-		OffroadHatchback,                                                      VNK,                 14000,               7000
-		OffroadHatchback_Blue,                                                 VNK,                 14000,               7000
+		OffroadHatchback,                           VNK,    14000,	7000
+		OffroadHatchback_Blue,                      VNK,    14000,  7000
 		OffroadHatchback_White,                                                VNK,                 14000,               7000
 		Hatchback_02,                                                          VNK,                 16000,               8000
 		Hatchback_02_Blue,                                                     VNK,                 16000,               8000
@@ -1798,7 +1827,6 @@
 		gglaw_G65_Pink,                                                        VNK,                 150000,              45000
 		gglaw_G65_Green,                                                       VNK,                 125000,              45000
 		gglaw_G65_White,                                                       VNK,                 125000,              45000
-		Gerph_Zil130,                                                          VNK,                 150000,              54000
 	<Category> Trucks
 		Kamaz_DON_Fuel_Nowoa,                                                  VNK,                 80000,               30000
 		Kamaz_DON_Fuel_Schnell,                                                VNK,                 80000,               30000
@@ -1823,11 +1851,13 @@
 		Kamaz_DON_Covered_LightBlue,                                           VNK,                 150000,              54000
 		Kamaz_DON_Covered_Yellow,                                              VNK,                 150000,              54000
 		Kamaz_DON_Covered_Red,                                                 VNK,                 150000,              54000
-		Gerph_Zil130,                                                          VNK,                 150000,              54000
+		Gerph_Zil130,                                                          VNK,                 65000,               23400
 	<Category> Vehicle Parts
-		HeadlightH7_Box,                                                       *,                   30,                  15
-		SparkPlug,                                                             *,                   60,                  40
-		EngineOil,                                                             *,                   70,                  40
+		HeadlightH7_Box,                   *,		30,		15
+		SparkPlug,                         *,       60,     40
+		Sparkplug_Box_1,                   *,       60,     40
+		Sparkplug_Box_2,                   *,       60,     40
+		EngineOil,                         *,       70,     40
 		CarBattery,                                                            *,                   100,                 50
 		TruckBattery,                                                          *,                   180,                 100
 		CarRadiator,                                                           *,                   200,                 100
@@ -3032,8 +3062,61 @@
         MSFC_SMALL_BACKPACK_ATACSAU,			*,		325,	165
 		MSFC_BottlePouch_ATACSAU,				*,		100,	65
         MSFC_G3Pants_ATACSAU,					*,		70,     35
+    <Category> MSFC Misc
+    	MSFC_HelmetPatch_Chernarus,				*,		100,	65
+		MSFC_HelmetPatch_FSB,					*,		100,	65
+		MSFC_HelmetPatch_MAMA_IM_SPEC,			*,		100,	65
+		MSFC_HelmetPatch_MEDIC_EN,				*,		100,	65
+		MSFC_HelmetPatch_MEDIC_RU,				*,		100,	65
+		MSFC_HelmetPatch_MSFC_TEXT,				*,		100,	65
+		MSFC_HelmetPatch_POEHAVSHY,				*,		100,	65
+		MSFC_HelmetPatch_SBCH,					*,		100,	65
+		MSFC_HelmetPatch_SOFA_ARMY_RF,			*,		100,	65
+		MSFC_HelmetPatch_BENDER,				*,		100,	65
+		MSFC_HelmetPatch_MSFC,					*,		100,	65
+        MSFC_HelmetPatch_RU,					*,		100,	65
+        MSFC_HelmetPatch_BY,					*,		100,	65
+        MSFC_HelmetPatch_UA,					*,		100,	65
+        MSFC_HelmetPatch_DE,					*,		100,	65
+        MSFC_HelmetPatch_US,					*,		100,	65
+        MSFC_HelmetPatch_Afghanistan,			*,		100,	65
+		MSFC_HelmetPatch_Australia,				*,		100,	65
+		MSFC_HelmetPatch_Austria,				*,		100,	65
+		MSFC_HelmetPatch_Belgium,				*,		100,	65
+		MSFC_HelmetPatch_Canada,				*,		100,	65
+		MSFC_HelmetPatch_Croatia,				*,		100,	65
+		MSFC_HelmetPatch_Czech,					*,		100,	65
+		MSFC_HelmetPatch_DANGER,				*,		100,	65
+		MSFC_HelmetPatch_Denmark,				*,		100,	65
+		MSFC_HelmetPatch_Estonia,				*,		100,	65
+		MSFC_HelmetPatch_Finland,				*,		100,	65
+		MSFC_HelmetPatch_France,				*,		100,	65
+		MSFC_HelmetPatch_Greece,				*,		100,	65
+		MSFC_HelmetPatch_Hungary,				*,		100,	65
+		MSFC_HelmetPatch_Irland,				*,		100,	65
+		MSFC_HelmetPatch_Island,				*,		100,	65
+		MSFC_HelmetPatch_Israel,				*,		100,	65
+		MSFC_HelmetPatch_Italy,					*,		100,	65
+		MSFC_HelmetPatch_Japan,					*,		100,	65
+		MSFC_HelmetPatch_Netherlands,			*,		100,	65
+		MSFC_HelmetPatch_Norway,				*,		100,	65
+		MSFC_HelmetPatch_Poland,				*,		100,	65
+		MSFC_HelmetPatch_Portugal,				*,		100,	65
+		MSFC_HelmetPatch_Puerto,				*,		100,	65
+		MSFC_HelmetPatch_SA,					*,		100,	65
+		MSFC_HelmetPatch_Scotland,				*,		100,	65
+		MSFC_HelmetPatch_Sweden,				*,		100,	65
+		MSFC_HelmetPatch_Switzerland,			*,		100,	65
+		MSFC_HelmetPatch_Thailand,				*,		100,	65
+		MSFC_HelmetPatch_Turkey,				*,		100,	65
+		MSFC_HelmetPatch_UK,					*,		100,	65
+		MSFC_HelmetPatch_UN,					*,		100,	65
+		MSFC_HelmetPatch_715,					*,		100,	65
 
 <Trader> Black Market Weapons
+	<Category> Base Raiding
+		SledgeHammer,							*,		10000,	1000
+		Hacksaw,								*,		25000,	2500
 	<Category> Sidearms
 		Engraved1911,							W,		1200,	400
 	<Category> Assault Rifles
@@ -3110,13 +3193,14 @@
 		CigarettePack_Cannabis,			*,		-1, 	300
 		CigarettePack_CannabisBlue,		*,		-1, 	600
 		CigarettePack_CannabisKush,		*,		-1, 	900
-	<Category> Cocaine
+	<Category> Cocaine & Meth
 		CuttingAgent,                   *,      900,    450
 		SulfuricAcid,                   *,      2500,   1250		
 		DevilsDandruff_CocaineRocks,    *,      -1,	    500
 		DevilsDandruff_CocaineBrick,    *,      -1,	    50000
+		MassMeth,						*,		-1,		35000
 <Trader> Weed Trader
-	<Category> Cannabis
+	<Category> Cannabis & Meth
 		CannabisSeedsPack,				*,		4000, 	1250				
 		Cannabis,						*,		-1, 	125
 		CannabisKush,					*,		-1, 	250
@@ -3129,7 +3213,26 @@
 		CigarettePack_Cannabis,			*,		-1, 	150
 		CigarettePack_CannabisBlue,		*,		-1, 	300
 		CigarettePack_CannabisKush,		*,		-1, 	450
-
+		MassMeth,						*,		10000,	6500
+<Trader> Black Market Vehicles
+	<Category> Military Vehicles
+		Dingo,                  		VNK,    275000, 90750
+		Kamaz,		                    VNK,    150000, 54000
+		KamazFuel,                  	VNK,    80000,  30000
+		KamazCovered,               	VNK,    150000, 54000
+	<Category> Military Vehicle Parts
+		DingoDoors_Driver,          	*,      1000,   500
+		DingoDoors_CoDriver,        	*,      1000,   500
+		DingoDoors_Cargo1,          	*,      1000,   500
+		DingoDoors_Cargo2,          	*,      1000,   500
+		DingoHood,                  	*,      700,    350
+		DingoTrunk,                 	*,      500,    250
+		DingoWheel,                 	*,      700,    350
+		KamazWheel,                 	*,      1500,   750
+		KamazTrunk,                 	*,      1500,   750
+		KamazHood,                  	*,      1500,   750
+		KamazDoors_Driver,          	*,      1500,   750
+		KamazDoors_CoDriver,        	*,      1500,   750
 
 //<OpenFile> FileName.txt								// Links to another File; Must be right above <FileEnd>!
 <FileEnd>												// This has to be on the End of this File and is very importand!

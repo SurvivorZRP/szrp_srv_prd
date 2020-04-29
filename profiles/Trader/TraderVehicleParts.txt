@@ -822,6 +822,71 @@
     Zil130Wheel
     Zil130WheelRear
     Zil130WheelRear
-	
+
+<VehicleParts> Dingo
+    SparkPlug
+    CarBattery
+    CarRadiator
+    HeadlightH7
+    HeadlightH7
+    DingoWheel
+    DingoWheel
+    DingoWheel
+    DingoWheel
+    DingoWheel
+    DingoDoors_Driver
+    DingoDoors_CoDriver
+    DingoDoors_Cargo1
+    DingoDoors_Cargo2
+    DingoHood
+    DingoTrunk
+
+<VehicleParts> Kamaz       
+    SparkPlug
+    CarBattery
+    CarRadiator
+    KamazDoors_Driver
+    KamazDoors_CoDriver
+    KamazHood
+    KamazTrunk
+    KamazWheel
+    KamazWheel
+    KamazWheel
+    KamazWheel
+    KamazWheel
+    KamazWheel
+    KamazWheel
+ 
+<VehicleParts> KamazCovered    
+    SparkPlug
+    CarBattery
+    CarRadiator
+    KamazDoors_Driver
+    KamazDoors_CoDriver
+    KamazHood
+    KamazTrunk
+    KamazWheel
+    KamazWheel
+    KamazWheel
+    KamazWheel
+    KamazWheel
+    KamazWheel
+    KamazWheel
+ 
+<VehicleParts> KamazFuel       
+    SparkPlug
+    CarBattery
+    CarRadiator
+    KamazDoors_Driver
+    KamazDoors_CoDriver
+    KamazHood
+    KamazWheel
+    KamazWheel
+    KamazWheel
+    KamazWheel
+    KamazWheel
+    KamazWheel
+    KamazWheel
+
 //<OpenFile> FileName.txt			// Links to another File; Must be right above <FileEnd>!
 <FileEnd>							// This has to be on the End of this File and is very importand!

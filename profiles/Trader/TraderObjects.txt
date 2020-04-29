@@ -52,6 +52,13 @@
 <TraderMarkerPosition>	11024,		346.02,		4431.8
 <TraderMarkerSafezone>	0
 
+//Black Market Vehicles
+<TraderMarker> 			10
+<TraderMarkerPosition>	2072,		300.6,		11301
+<TraderMarkerSafezone>	0
+<VehicleSpawn>			2071.5,		300.43,		11288.5
+<VehicleSpawnOri>		90,			0,			0
+
 // ------------------------------------------------------ Objects to Spawn ------------------------------------------------------
 
 <Object> 			SurvivorF_Eva						
@@ -160,6 +167,18 @@
 <ObjectAttachment>	CargoPants_Green
 <ObjectAttachment>	WorkingBoots_Grey
 
+// Black Market Vehicles
+<Object> 			SurvivorM_Rolf
+<ObjectPosition>	2072,	300.6,	11301
+<ObjectOrientation>	172, 0,	0
+<ObjectAttachment>	cigarette_mung
+<ObjectAttachment>	Wrench
+<ObjectAttachment>	Ushanka_Black
+<ObjectAttachment>	AviatorGlasses
+<ObjectAttachment>	TrackSuitJacket_Black
+<ObjectAttachment>	TrackSuitPants_Black
+<ObjectAttachment>	Sneakers_Black
+
 <Object>			BBP_Cement_Mixer
 <ObjectPosition>	11424.311523,	181.192352,	9500.611328
 <ObjectOrientation>	  94.744873,	  1.076530,	   -1.791006
@@ -188,6 +207,13 @@
 <ObjectPosition>	10888.239258,	333.284058, 4383.60839
 <ObjectOrientation>	   16.388357,	-7.060572, 	0.083464
 
+<Object>			Land_Radio_PanelBig
+<ObjectPosition>	3465.401611, 	170.349655,	8979.301758
+<ObjectOrientation> -51.000000,		0.000000,	0.000000
+
+<Object> 			Land_Radio_PanelPAS
+<ObjectPosition>	3464.047852,	170.399658, 8980.374023
+<ObjectOrientation> -50.999989,		0.000000,	0.000000
 
 //<OpenFile> FileName.txt								// Links to another File; Must be right above <FileEnd>!
 <FileEnd>												// This has to be on the End of this File and is very importand!

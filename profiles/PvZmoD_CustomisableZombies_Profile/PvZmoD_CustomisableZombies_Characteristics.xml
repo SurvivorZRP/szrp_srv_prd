@@ -918,7 +918,7 @@
 
 
 	<type name="ZmbM_DH_Master_Day">
-        <Health_Points              Day="700"   Night="700"/>   <!--  Very Very Strong Lvl BOSS  -->
+        <Health_Points              Day="1200"  Night="1200"/>   <!--  Very Very Strong Lvl BOSS  -->
         <Resistance_to_Bullets      Day="10000" Night="10000"/>
         <Resistance_to_Melees       Day="1.0"   Night="1.0"/>
         <Resistance_to_HeavyAttack  Day="0.5"   Night="0.5"/>
@@ -938,7 +938,7 @@
 
 
 	<type name="ZmbM_DH_Master_Night">							<!--  This class is use if go through walls option of Dark Horde mod is Activated  -->
-        <Health_Points              Day="1500"  Night="1500"/>   <!--  Very Very Strong Lvl BOSS  -->
+        <Health_Points              Day="1600"  Night="1600"/>   <!--  Very Very Strong Lvl BOSS  -->
         <Resistance_to_Bullets      Day="10000" Night="10000"/>
         <Resistance_to_Melees       Day="1.0"   Night="1.0"/>
         <Resistance_to_HeavyAttack  Day="0.5"   Night="0.5"/>
